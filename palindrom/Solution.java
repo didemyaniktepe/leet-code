@@ -18,7 +18,4 @@ public class Solution {
         return reverse(x / 10, temp);
     }
 
-    public static void main(String... arg) {
-        System.out.println(new Solution().isPalindrome(1000021));
-    }
 }
