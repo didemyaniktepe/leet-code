@@ -24,7 +24,7 @@ public class Solution {
                 number -= romans.get(s.charAt(i));
             }
         }
-        number += romans.get(s.charAt(s.length()-1));
+        number += romans.get(s.charAt(s.length() - 1));
         return number;
     }
 
