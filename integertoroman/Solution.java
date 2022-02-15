@@ -9,8 +9,6 @@ public class Solution {
 
     public String intToRoman(int num) {
         StringBuilder stringBuilder = new StringBuilder();
-        System.out.println(strings.size());
-        System.out.println(integers.size());
         for (int i = 0; i < integers.size(); i++) {
             while (num >= integers.get(i)) {
                 num -= integers.get(i);
