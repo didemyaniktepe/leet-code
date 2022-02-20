@@ -2,18 +2,8 @@ package containerwithmostwater;
 
 public class Solution {
 
-    public int maxArea(int[] height) {
-        int maxWidth = height.length - 1 , maxArea = 0;
-        while (maxWidth != 0) {
-            int startPoint = 0;
-            int endPoint = maxWidth + startPoint;
-            while (endPoint < height.length) {
-                maxArea = Math.max(Math.min(height[startPoint++], height[endPoint++]) * maxWidth, maxArea);
-            }
-            maxWidth--;
-        }
-
-        return maxArea;
+    public static void main(String... args) {
+        System.out.println(new Solution().maxArea(new int[]{2, 3, 4, 5, 18, 17, 6}));
     }
 
     public int secondMaxArea(int[] height) {
@@ -31,9 +21,18 @@ public class Solution {
         return maxArea;
     }
 
+    public int maxArea(int[] height) {
+        int maxWidth = height.length - 1, maxArea = 0;
+        while (maxWidth != 0) {
+            int startPoint = 0;
+            int endPoint = maxWidth + startPoint;
+            while (endPoint < height.length) {
+                maxArea = Math.max(Math.min(height[startPoint++], height[endPoint++]) * maxWidth, maxArea);
+            }
+            maxWidth--;
+        }
 
-    public static void main(String... args) {
-        System.out.println(new Solution().maxArea(new int[]{2,3,4,5,18,17,6}));
+        return maxArea;
     }
 
 }
