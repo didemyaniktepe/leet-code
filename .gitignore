@@ -1,0 +1,28 @@
+# Java
+*.class
+*.jar
+*.war
+hs_err_pid*
+replay_pid*
+
+# IntelliJ IDEA
+.idea/
+*.iml
+!leet-code.iml
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Build tools
+out/
+target/
+build/
+.gradle/
